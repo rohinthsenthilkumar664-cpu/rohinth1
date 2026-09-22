@@ -1,5 +1,0 @@
-TITLE='Agriculture Expert Chatbot'
-DOMAIN='Agriculture'
-WELCOME='Welcome to Agriculture Expert Chatbot!'
-PRIMARY='#60a5fa'
-BG='#1f2937'

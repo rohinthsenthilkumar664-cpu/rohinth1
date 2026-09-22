@@ -1,5 +1,0 @@
-TITLE='Marketing Expert Chatbot'
-DOMAIN='Marketing'
-WELCOME='Welcome to Marketing Expert Chatbot!'
-PRIMARY='#f59e0b'
-BG='#1b1b1b'

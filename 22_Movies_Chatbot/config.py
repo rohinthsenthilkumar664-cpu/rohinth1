@@ -1,5 +1,0 @@
-TITLE='Movies Expert Chatbot'
-DOMAIN='Movies'
-WELCOME='Welcome to Movies Expert Chatbot!'
-PRIMARY='#ec4899'
-BG='#3b0a45'

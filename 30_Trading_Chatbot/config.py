@@ -1,5 +1,0 @@
-TITLE='Trading Expert Chatbot'
-DOMAIN='Trading'
-WELCOME='Welcome to Trading Expert Chatbot!'
-PRIMARY='#38bdf8'
-BG='#0f172a'

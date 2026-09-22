@@ -1,5 +1,0 @@
-TITLE='SSC GD Expert Chatbot'
-DOMAIN='SSC GD'
-WELCOME='Welcome to SSC GD Expert Chatbot!'
-PRIMARY='#a78bfa'
-BG='#2d1b69'

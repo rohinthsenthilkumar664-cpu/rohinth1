@@ -1,5 +1,0 @@
-TITLE='Cooking Expert Chatbot'
-DOMAIN='Cooking'
-WELCOME='Welcome to Cooking Expert Chatbot!'
-PRIMARY='#f59e0b'
-BG='#1b1b1b'

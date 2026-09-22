@@ -1,5 +1,0 @@
-TITLE='Mental Wellness Expert Chatbot'
-DOMAIN='Mental Wellness'
-WELCOME='Welcome to Mental Wellness Expert Chatbot!'
-PRIMARY='#ec4899'
-BG='#3b0a45'

@@ -1,16 +1,15 @@
-
-<!doctype html><html><head><meta name=viewport content="width=device-width,initial-scale=1">
-<title>{{title}}</title>
+<!doctype html><html><head><meta name=viewport content='width=device-width,initial-scale=1'><title>{{cfg['TITLE']}}</title>
 <style>
-body{margin:0;font-family:system-ui;background:{{bg}};color:#fff;display:flex;justify-content:center}
-.c{width:min(760px,100%);padding:20px}.h{color:{{primary}}}.chat{height:65vh;overflow:auto;background:#ffffff12;border-radius:18px;padding:14px}
-.b{background:{{primary}};border:none;padding:12px 18px;border-radius:12px;color:#000;font-weight:700}
-input{flex:1;padding:12px;border-radius:12px;border:none}
-</style></head><body><div class=c><h1 class=h>{{title}}</h1><div class=chat id=chat><p>{{welcome}}</p></div>
-<div style="display:flex;gap:8px;margin-top:12px"><input id=i placeholder="Ask..."><button class=b onclick=s()>Send</button></div>
+body{margin:0;font-family:Arial;background:{{cfg['BG']}};color:white}
+.wrap{max-width:800px;margin:auto;padding:20px}
+.head{padding:20px;border-radius:20px;background:linear-gradient(135deg,{{cfg['ACCENT']}},#0003)}
+.chat{height:60vh;overflow:auto;padding:15px;border-radius:20px;background:#ffffff10;margin:15px 0}
+.row{display:flex;gap:8px}input{flex:1;padding:12px;border-radius:12px;border:none}button{background:{{cfg['ACCENT']}};border:none;padding:12px 18px;border-radius:12px;font-weight:bold}
+</style></head><body><div class=wrap><div class=head><h2>{{cfg['TITLE']}}</h2><p>{{cfg['WELCOME_MESSAGE']}}</p></div><div id=chat class=chat></div><div class=row><input id=i placeholder='Ask {{cfg["DOMAIN"]}}...'><button onclick=s()>Send</button><button onclick=c()>Clear</button></div></div>
 <script>
-async function s(){let v=i.value.trim();if(!v)return;chat.innerHTML+=`<p><b>You:</b> ${v}</p>`;i.value='';
-let r=await fetch('/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:v})});
-let j=await r.json();chat.innerHTML+=`<p><b>Bot:</b> ${j.reply}</p>`;chat.scrollTop=chat.scrollHeight;}
-i.onkeydown=e=>{if(e.key==='Enter')s()}
-</script></div></body></html>
+const chat=document.getElementById('chat'),i=document.getElementById('i');
+i.onkeydown=e=>{if(e.key==='Enter')s();};
+async function s(){let v=i.value.trim();if(!v)return;chat.innerHTML+=`<p><b>You:</b> ${v}</p>`;i.value='';chat.scrollTop=chat.scrollHeight;
+let r=await fetch('/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:v})});let j=await r.json();chat.innerHTML+=`<p><b>Bot:</b> ${j.reply||j.error}</p>`;chat.scrollTop=chat.scrollHeight;}
+async function c(){await fetch('/clear',{method:'POST'});chat.innerHTML='';}
+</script></body></html>

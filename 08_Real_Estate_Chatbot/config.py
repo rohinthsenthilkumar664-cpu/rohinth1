@@ -1,5 +1,0 @@
-TITLE='Real Estate Expert Chatbot'
-DOMAIN='Real Estate'
-WELCOME='Welcome to Real Estate Expert Chatbot!'
-PRIMARY='#34d399'
-BG='#0b3d2e'

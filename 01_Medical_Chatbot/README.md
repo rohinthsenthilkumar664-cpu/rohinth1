@@ -1,1 +1,1 @@
-# Medical Expert Chatbot\nRun: pip install -r requirements.txt && python app.py\n
+# Medical Chatbot\n1. Add GEMINI_API_KEY to .env\n2. pip install -r requirements.txt\n3. python app.py\n

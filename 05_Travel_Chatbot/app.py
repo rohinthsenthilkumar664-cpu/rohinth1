@@ -1,21 +1,32 @@
 
 import os
-from flask import Flask,render_template,request,session,jsonify
+from flask import Flask, render_template, request, jsonify, session
 from dotenv import load_dotenv
+from google import genai
 from config import *
 load_dotenv()
-app=Flask(__name__);app.secret_key='change-me'
-@app.get('/')
+app=Flask(__name__)
+app.secret_key=os.getenv("SECRET_KEY","change-me")
+client=genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+@app.get("/")
 def home():
-    return render_template('index.html',title=TITLE,welcome=WELCOME,bg=BG,primary=PRIMARY)
-@app.post('/chat')
+    session.setdefault("history",[])
+    return render_template("index.html",cfg=globals())
+@app.post("/chat")
 def chat():
-    msg=request.json.get('message','')
-    if DOMAIN.lower() not in msg.lower() and len(msg.split())>2:
-        return jsonify(reply=f"Sorry, I only answer {DOMAIN} questions.")
-    return jsonify(reply=f"Demo reply for {DOMAIN}: {msg}")
-@app.post('/clear')
+    m=request.json.get("message","").strip()
+    if not m: return jsonify(error="Empty"),400
+    hist=session.get("history",[])
+    prompt=SYSTEM_PROMPT+"\nUser:"+m
+    try:
+        r=client.models.generate_content(model="gemini-2.5-flash-lite",contents=prompt)
+        txt=r.text or "No response"
+    except Exception as e:
+        txt=f"Gemini error: {e}"
+    hist.append({"u":m,"b":txt}); session["history"]=hist[-12:]
+    return jsonify(reply=txt)
+@app.post("/clear")
 def clear():
-    session.clear();return jsonify(ok=True)
-if __name__=='__main__':
-    app.run(host='0.0.0.0',port=int(os.getenv('PORT',5000)))
+    session.clear(); return jsonify(ok=True)
+if __name__=="__main__":
+    app.run(host="0.0.0.0",port=int(os.getenv("PORT",PORT)))

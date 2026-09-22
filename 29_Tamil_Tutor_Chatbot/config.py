@@ -1,5 +1,0 @@
-TITLE='Tamil Tutor Expert Chatbot'
-DOMAIN='Tamil Tutor'
-WELCOME='Welcome to Tamil Tutor Expert Chatbot!'
-PRIMARY='#60a5fa'
-BG='#1f2937'
