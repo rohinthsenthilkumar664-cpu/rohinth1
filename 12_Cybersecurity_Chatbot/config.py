@@ -1,0 +1,5 @@
+TITLE='Cybersecurity Expert Chatbot'
+DOMAIN='Cybersecurity'
+WELCOME='Welcome to Cybersecurity Expert Chatbot!'
+PRIMARY='#38bdf8'
+BG='#0f172a'

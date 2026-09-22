@@ -1,0 +1,5 @@
+TITLE='Math Expert Chatbot'
+DOMAIN='Math'
+WELCOME='Welcome to Math Expert Chatbot!'
+PRIMARY='#34d399'
+BG='#0b3d2e'

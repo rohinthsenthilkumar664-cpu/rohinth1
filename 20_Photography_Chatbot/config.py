@@ -1,0 +1,5 @@
+TITLE='Photography Expert Chatbot'
+DOMAIN='Photography'
+WELCOME='Welcome to Photography Expert Chatbot!'
+PRIMARY='#34d399'
+BG='#0b3d2e'

@@ -1,0 +1,5 @@
+TITLE='Medical Expert Chatbot'
+DOMAIN='Medical'
+WELCOME='Welcome to Medical Expert Chatbot!'
+PRIMARY='#f59e0b'
+BG='#1b1b1b'

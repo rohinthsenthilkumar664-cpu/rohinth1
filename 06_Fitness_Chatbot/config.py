@@ -1,0 +1,5 @@
+TITLE='Fitness Expert Chatbot'
+DOMAIN='Fitness'
+WELCOME='Welcome to Fitness Expert Chatbot!'
+PRIMARY='#38bdf8'
+BG='#0f172a'

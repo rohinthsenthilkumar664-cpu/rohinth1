@@ -1,0 +1,5 @@
+TITLE='Books Expert Chatbot'
+DOMAIN='Books'
+WELCOME='Welcome to Books Expert Chatbot!'
+PRIMARY='#60a5fa'
+BG='#1f2937'

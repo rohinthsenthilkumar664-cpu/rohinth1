@@ -1,0 +1,5 @@
+TITLE='Customer Support Expert Chatbot'
+DOMAIN='Customer Support'
+WELCOME='Welcome to Customer Support Expert Chatbot!'
+PRIMARY='#ec4899'
+BG='#3b0a45'

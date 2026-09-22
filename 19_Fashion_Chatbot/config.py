@@ -1,0 +1,5 @@
+TITLE='Fashion Expert Chatbot'
+DOMAIN='Fashion'
+WELCOME='Welcome to Fashion Expert Chatbot!'
+PRIMARY='#f59e0b'
+BG='#1b1b1b'

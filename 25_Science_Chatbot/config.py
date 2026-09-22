@@ -1,0 +1,5 @@
+TITLE='Science Expert Chatbot'
+DOMAIN='Science'
+WELCOME='Welcome to Science Expert Chatbot!'
+PRIMARY='#f59e0b'
+BG='#1b1b1b'

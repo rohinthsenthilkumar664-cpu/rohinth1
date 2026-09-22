@@ -1,0 +1,5 @@
+TITLE='Music Expert Chatbot'
+DOMAIN='Music'
+WELCOME='Welcome to Music Expert Chatbot!'
+PRIMARY='#a78bfa'
+BG='#2d1b69'

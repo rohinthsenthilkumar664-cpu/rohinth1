@@ -1,0 +1,5 @@
+TITLE='Travel Expert Chatbot'
+DOMAIN='Travel'
+WELCOME='Welcome to Travel Expert Chatbot!'
+PRIMARY='#60a5fa'
+BG='#1f2937'

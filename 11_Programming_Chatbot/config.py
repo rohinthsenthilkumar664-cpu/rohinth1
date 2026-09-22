@@ -1,0 +1,5 @@
+TITLE='Programming Expert Chatbot'
+DOMAIN='Programming'
+WELCOME='Welcome to Programming Expert Chatbot!'
+PRIMARY='#60a5fa'
+BG='#1f2937'

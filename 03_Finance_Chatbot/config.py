@@ -1,0 +1,5 @@
+TITLE='Finance Expert Chatbot'
+DOMAIN='Finance'
+WELCOME='Welcome to Finance Expert Chatbot!'
+PRIMARY='#a78bfa'
+BG='#2d1b69'

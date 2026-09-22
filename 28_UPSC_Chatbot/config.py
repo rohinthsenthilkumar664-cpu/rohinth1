@@ -1,0 +1,5 @@
+TITLE='UPSC Expert Chatbot'
+DOMAIN='UPSC'
+WELCOME='Welcome to UPSC Expert Chatbot!'
+PRIMARY='#ec4899'
+BG='#3b0a45'

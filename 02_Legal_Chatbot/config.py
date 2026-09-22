@@ -1,0 +1,5 @@
+TITLE='Legal Expert Chatbot'
+DOMAIN='Legal'
+WELCOME='Welcome to Legal Expert Chatbot!'
+PRIMARY='#34d399'
+BG='#0b3d2e'

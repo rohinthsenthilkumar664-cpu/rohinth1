@@ -1,0 +1,5 @@
+TITLE='History Expert Chatbot'
+DOMAIN='History'
+WELCOME='Welcome to History Expert Chatbot!'
+PRIMARY='#38bdf8'
+BG='#0f172a'

@@ -1,0 +1,5 @@
+TITLE='E-commerce Expert Chatbot'
+DOMAIN='E-commerce'
+WELCOME='Welcome to E-commerce Expert Chatbot!'
+PRIMARY='#a78bfa'
+BG='#2d1b69'

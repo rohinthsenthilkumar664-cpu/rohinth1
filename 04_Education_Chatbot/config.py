@@ -1,0 +1,5 @@
+TITLE='Education Expert Chatbot'
+DOMAIN='Education'
+WELCOME='Welcome to Education Expert Chatbot!'
+PRIMARY='#ec4899'
+BG='#3b0a45'

@@ -1,0 +1,5 @@
+TITLE='HR Expert Chatbot'
+DOMAIN='HR'
+WELCOME='Welcome to HR Expert Chatbot!'
+PRIMARY='#a78bfa'
+BG='#2d1b69'

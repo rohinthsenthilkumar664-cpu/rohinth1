@@ -1,0 +1,5 @@
+TITLE='Automobile Expert Chatbot'
+DOMAIN='Automobile'
+WELCOME='Welcome to Automobile Expert Chatbot!'
+PRIMARY='#38bdf8'
+BG='#0f172a'
